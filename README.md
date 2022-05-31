@@ -1,9 +1,10 @@
 ## Objetivo
 
-Automação de testes no site dos Correios. Pesquisar CEP e Código de rastreamento.
+Automação de testes no site dos Correios. 
+Pesquisa de CEP e Código de rastreamento.
 
-### Para criação dos testes foi utilizado o Eclipse IDE, projeto com estrutura Maven.
-### Utilizado Cucumber e Selenium WebDriver com PageObjects.
+***Para criação dos testes foi utilizado o Eclipse IDE, projeto com estrutura Maven.***
+***Utilizado Cucumber e Selenium WebDriver com PageObjects.***
 
 ## A estrutura do pacote de test é dividida em: 
 
@@ -17,7 +18,7 @@ Automação de testes no site dos Correios. Pesquisar CEP e Código de rastreame
 
 * ***Features***: Arquivo feature com os cenários de testes utilizando Cucumber.
  
-## Recursos utilizados
+## Tecnologia
 
 - Java 8
 - Java JDK 11
