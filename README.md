@@ -1,32 +1,21 @@
 ## Objetivo
 
-Fazer automação do cenário de teste abaixo:
-
-1. Entre no site dos correios;
-2. Procure pelo CEP 80700000;
-3. Confirmar que o CEP não existe;
-4. Voltar a tela inicial;
-5. Procure pelo CEP 01013-001
-6. Confirmar que o resultado seja em “Rua Quinze de Novembro, São Paulo/SP”
-7. Voltar a tela inicial;
-8. Procurar no rastreamento de código o número “SS987654321BR”
-9. Confirmar que o código não está correto;
-10. Fechar o browser;
+Automação de testes no site dos Correios. Pesquisar CEP e Código de rastreamento.
 
 ### Para criação dos testes foi utilizado o Eclipse IDE, projeto com estrutura Maven.
 ### Utilizado Cucumber e Selenium WebDriver com PageObjects.
 
 ## A estrutura do pacote de test é dividida em: 
 
-* ***pageObjects***: Page Objects da página
+* ***Page***: Page objects das páginas
 
 * ***Runner***: Runner para rodar o Cucumber
 
-* ***Steps***: passo a passo dos testes
+* ***Steps***: Passos dos testes
 
 ## A estrutura do pacote de resources é dividida em: 
 
-* ***Features***: Arquivo feature com passo a passo utilizando Cucumber.
+* ***Features***: Arquivo feature com os cenários de testes utilizando Cucumber.
  
 ## Recursos utilizados
 
@@ -37,4 +26,4 @@ Fazer automação do cenário de teste abaixo:
 - Selenium - 3.141
 - Cucumber - Puglin para Eclipse	v1.0.0.202107150747
 
-**Observação:** O _ChromeDriver.exe_ disponibilizado na pasta _drivers_ é compatível com a Versão 93.0.4577.63 do navegador Chrome.
+**Observação:** O _ChromeDriver.exe_ disponibilizado na pasta _drivers_ é compatível com a Versão 102.0.5005.61 do navegador Chrome.
