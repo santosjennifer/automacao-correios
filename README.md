@@ -1,6 +1,4 @@
-## Objetivo
-
-Automação de testes no site dos Correios. Pesquisa de CEP e Código de rastreamento.
+## Automação de testes no site dos Correios. Pesquisa de CEP e Código de rastreamento.
 
 ***Para criação dos testes foi utilizado o Eclipse IDE, projeto com estrutura Maven***
 
@@ -27,4 +25,8 @@ Automação de testes no site dos Correios. Pesquisa de CEP e Código de rastrea
 - Selenium - 3.141
 - Cucumber - Puglin para Eclipse	v1.0.0.202107150747
 
-**Observação:** O _ChromeDriver.exe_ disponibilizado na pasta _drivers_ é compatível com a Versão 102.0.5005.61 do navegador Chrome.
+**Observação:** O _ChromeDriver.exe_ disponibilizado na pasta _drivers_ é compatível com a Versão 103.0.5060.53 do navegador Chrome.
+
+## Executando os Testes
+
+Para executar todos os testes rode o comando ```mvn test```
