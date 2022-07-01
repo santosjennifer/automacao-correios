@@ -6,7 +6,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features")
+@CucumberOptions(
+		features = "classpath:features",
+		glue =  "br.com.correios.steps"
+)
 public class CucumberRunner {
 
 }

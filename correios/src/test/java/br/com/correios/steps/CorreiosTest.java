@@ -29,7 +29,7 @@ public class CorreiosTest {
 	public void validar_que_cep_nao_existe() throws InterruptedException {
 		pesquisar.navegarParaAbaProximaAba();
 		pesquisar.espereCarregar();
-		Assert.assertEquals("N„o h· dados a serem exibidos", pesquisar.obterMensagemCEP());
+		Assert.assertEquals("N√£o h√° dados a serem exibidos", pesquisar.obterMensagemCEP());
 
 		pesquisar.voltarParaPaginaInicial();
 		pesquisar.closeBrowser();
@@ -39,7 +39,7 @@ public class CorreiosTest {
 	public void no_site_correios_informar_cep_valido() {
 		this.pesquisar = new CorreiosPage();
 		pesquisar.aceitarCookies();
-		pesquisar.informarCEP("01013-001");
+		pesquisar.informarCEP("01013001");
 	}
 
 	@Then("confirmar que CEP eh valido")
@@ -47,7 +47,7 @@ public class CorreiosTest {
 		pesquisar.navegarParaAbaProximaAba();
 		pesquisar.espereCarregar();
 		Assert.assertTrue(pesquisar.obterEnderecoCEP().contains("Rua Quinze de Novembro"));
-		Assert.assertTrue(pesquisar.obterEnderecoCEP().contains("S„o Paulo/SP"));
+		Assert.assertTrue(pesquisar.obterEnderecoCEP().contains("S√£o Paulo/SP"));
 
 		pesquisar.voltarParaPaginaInicial();
 		pesquisar.closeBrowser();
@@ -72,7 +72,7 @@ public class CorreiosTest {
 		pesquisar.informarCodigoRastreamentoOutraPagina("G");
 		pesquisar.pesquisarCodigoRastreamentoOutraPagina();
 
-		Assert.assertEquals("CÛdigo de objeto, CPF ou CNPJ informado n„o est· v·lido",
+		Assert.assertEquals("C√≥digo de objeto, CPF ou CNPJ informado n√£o est√° v√°lido",
 				pesquisar.obterMensagemCodigoRastreamento());
 
 		pesquisar.closeBrowser();

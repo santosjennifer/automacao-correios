@@ -66,7 +66,7 @@ public class CorreiosPage extends DriverPage {
 
 	public String obterMensagemCodigoRastreamento() {		
 		// return this.browser.findElement(By.xpath("//*[@id=\"alerta\"]/div[1]")).getText();
-		return this.browser.findElement(By.xpath("/html/body/main/div[1]/form/div[2]/div[1]/div/div[3]")).getText();
+		return this.browser.findElement(By.xpath("/html/body/main/div[1]/form/div[2]/div[1]/div/div[4]")).getText();
 	}
 
 	public void espereCarregar() {
