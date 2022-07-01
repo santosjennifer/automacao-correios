@@ -8,7 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "classpath:features",
-		glue =  "br.com.correios.steps"
+		glue =  "br.com.correios.steps",
+		plugin = {"pretty"}
 )
 public class CucumberRunner {
 
